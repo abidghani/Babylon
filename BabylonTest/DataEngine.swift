@@ -68,7 +68,7 @@ class DataEngine: NSObject, NSURLSessionDelegate {
                 celebrityDictionary["Address"] = (address as! String)
             }
             
-            if let phoneNumber = celebrity["phoneNumber"]!{
+            if let phoneNumber = celebrity["phone_number"]!{
                 celebrityDictionary["PhoneNumber"] = (phoneNumber as! String)
             } else {
                 celebrityDictionary["PhoneNumber"] = "n/a"
@@ -76,11 +76,6 @@ class DataEngine: NSObject, NSURLSessionDelegate {
             
             if let email = celebrity["email"]!{
                 celebrityDictionary["Email"] = (email as? String)
-                // create the avator URL.
-                //let avatarString = "http://api.adorable.io/avatars/200/" + (email as? String)!
-                
-                
-                
             } else {
                 celebrityDictionary["Email"] = "n/a"
             }
