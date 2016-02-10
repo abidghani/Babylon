@@ -12,9 +12,17 @@ class CelebrityCell: UITableViewCell {
 
     @IBOutlet weak var celebrityNameLabel: UILabel!
     
+    @IBOutlet weak var celebrityPhoto: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        // Some code to make the avatar a circle.
+        self.celebrityPhoto.layer.cornerRadius = self.celebrityPhoto.frame.size.width/2
+        self.celebrityPhoto?.layer.masksToBounds = true
+        self.celebrityPhoto.clipsToBounds = true
+    
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

@@ -10,6 +10,7 @@
 		8F1F2AE81C6ABCF700A2165A /* DataEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1F2AE71C6ABCF700A2165A /* DataEngine.swift */; };
 		8F1F2AEA1C6ABD4200A2165A /* Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1F2AE91C6ABD4200A2165A /* Celebrity.swift */; };
 		8F1F2AEF1C6AE35300A2165A /* CelebrityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1F2AEE1C6AE35300A2165A /* CelebrityCell.swift */; };
+		8F27CBD11C6BA74A00451814 /* Haneke.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F27CBC71C6BA70D00451814 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F79571C1C6A73C0005695F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F79571B1C6A73C0005695F0 /* AppDelegate.swift */; };
 		8F79571E1C6A73C0005695F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F79571D1C6A73C0005695F0 /* ViewController.swift */; };
 		8F7957211C6A73C0005695F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F79571F1C6A73C0005695F0 /* Main.storyboard */; };
@@ -18,10 +19,62 @@
 		8F7957321C6A7513005695F0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7957311C6A7513005695F0 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8F27CBC61C6BA70D00451814 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F27CBBF1C6BA70D00451814 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9561980418C00CD0F4C;
+			remoteInfo = "Haneke-iOS";
+		};
+		8F27CBC81C6BA70D00451814 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F27CBBF1C6BA70D00451814 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6393C5F71C3B229200EB1FD8;
+			remoteInfo = "Haneke-tvOS";
+		};
+		8F27CBCA1C6BA70D00451814 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F27CBBF1C6BA70D00451814 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9611980418C00CD0F4C;
+			remoteInfo = HanekeTests;
+		};
+		8F27CBCC1C6BA70D00451814 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F27CBBF1C6BA70D00451814 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
+			remoteInfo = HanekeDemo;
+		};
+		8F27CBCE1C6BA73400451814 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F27CBBF1C6BA70D00451814 /* Haneke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A095C9551980418C00CD0F4C;
+			remoteInfo = "Haneke-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F27CBD01C6BA73900451814 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8F27CBD11C6BA74A00451814 /* Haneke.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8F1F2AE71C6ABCF700A2165A /* DataEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEngine.swift; sourceTree = "<group>"; };
 		8F1F2AE91C6ABD4200A2165A /* Celebrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Celebrity.swift; sourceTree = "<group>"; };
 		8F1F2AEE1C6AE35300A2165A /* CelebrityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelebrityCell.swift; sourceTree = "<group>"; };
+		8F27CBBF1C6BA70D00451814 /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = "../../../Downloads/HanekeSwift-master 2/Haneke.xcodeproj"; sourceTree = "<group>"; };
 		8F7957181C6A73C0005695F0 /* BabylonTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabylonTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F79571B1C6A73C0005695F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F79571D1C6A73C0005695F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,9 +96,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F27CBC01C6BA70D00451814 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F27CBC71C6BA70D00451814 /* Haneke.framework */,
+				8F27CBC91C6BA70D00451814 /* Haneke.framework */,
+				8F27CBCB1C6BA70D00451814 /* HanekeTests.xctest */,
+				8F27CBCD1C6BA70D00451814 /* HanekeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8F79570F1C6A73C0005695F0 = {
 			isa = PBXGroup;
 			children = (
+				8F27CBBF1C6BA70D00451814 /* Haneke.xcodeproj */,
 				8F79571A1C6A73C0005695F0 /* BabylonTest */,
 				8F7957191C6A73C0005695F0 /* Products */,
 			);
@@ -118,10 +183,12 @@
 				8F7957141C6A73C0005695F0 /* Sources */,
 				8F7957151C6A73C0005695F0 /* Frameworks */,
 				8F7957161C6A73C0005695F0 /* Resources */,
+				8F27CBD01C6BA73900451814 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8F27CBCF1C6BA73400451814 /* PBXTargetDependency */,
 			);
 			name = BabylonTest;
 			productName = BabylonTest;
@@ -154,12 +221,49 @@
 			mainGroup = 8F79570F1C6A73C0005695F0;
 			productRefGroup = 8F7957191C6A73C0005695F0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8F27CBC01C6BA70D00451814 /* Products */;
+					ProjectRef = 8F27CBBF1C6BA70D00451814 /* Haneke.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8F7957171C6A73C0005695F0 /* BabylonTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8F27CBC71C6BA70D00451814 /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = 8F27CBC61C6BA70D00451814 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F27CBC91C6BA70D00451814 /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = 8F27CBC81C6BA70D00451814 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F27CBCB1C6BA70D00451814 /* HanekeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HanekeTests.xctest;
+			remoteRef = 8F27CBCA1C6BA70D00451814 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F27CBCD1C6BA70D00451814 /* HanekeDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HanekeDemo.app;
+			remoteRef = 8F27CBCC1C6BA70D00451814 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8F7957161C6A73C0005695F0 /* Resources */ = {
@@ -189,6 +293,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F27CBCF1C6BA73400451814 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Haneke-iOS";
+			targetProxy = 8F27CBCE1C6BA73400451814 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8F79571F1C6A73C0005695F0 /* Main.storyboard */ = {
@@ -295,10 +407,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Abid Ghani (5679K77YV3)";
 				INFOPLIST_FILE = BabylonTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = BOSS.BabylonTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bosscomputing.babylon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "432d12a0-474b-4b0e-97f1-53974d8674a8";
 			};
 			name = Debug;
 		};
@@ -306,10 +421,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Abid Ghani (5679K77YV3)";
 				INFOPLIST_FILE = BabylonTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = BOSS.BabylonTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bosscomputing.babylon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "432d12a0-474b-4b0e-97f1-53974d8674a8";
 			};
 			name = Release;
 		};

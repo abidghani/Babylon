@@ -29,32 +29,56 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWk-bO-fXY">
-                                                    <rect key="frame" x="20" y="10" width="335" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWk-bO-fXY">
+                                                    <rect key="frame" x="76" y="18" width="279" height="24"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                                     <color key="textColor" white="0.74832214765100669" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdm-7S-pvM">
-                                                    <rect key="frame" x="20" y="51" width="335" height="1"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdm-7S-pvM" userLabel="seperator">
+                                                    <rect key="frame" x="20" y="59" width="335" height="1"/>
                                                     <color key="backgroundColor" white="0.1020868288590604" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="Asm-3A-h2G"/>
                                                     </constraints>
                                                 </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="wh9-n5-Fee">
+                                                    <rect key="frame" x="28" y="10" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="76N-ok-ceR"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Vle-Sc-e7s"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wh9-n5-Fee" firstAttribute="centerY" secondItem="6bE-KG-ugt" secondAttribute="centerY" id="3DE-tC-2cN"/>
+                                                <constraint firstItem="wh9-n5-Fee" firstAttribute="leading" secondItem="6bE-KG-ugt" secondAttribute="leadingMargin" constant="20" id="94M-lT-qj0"/>
+                                                <constraint firstItem="dWk-bO-fXY" firstAttribute="leading" secondItem="wh9-n5-Fee" secondAttribute="trailing" constant="8" id="ldI-7h-CWd"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="3DE-tC-2cN"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.20013632550335569" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="vdm-7S-pvM" firstAttribute="leading" secondItem="Tgx-TA-oUj" secondAttribute="leading" constant="20" id="0Y1-Jj-sKL"/>
-                                            <constraint firstAttribute="bottom" secondItem="vdm-7S-pvM" secondAttribute="bottom" constant="8" id="9Qb-Cm-bmG"/>
+                                            <constraint firstAttribute="bottom" secondItem="vdm-7S-pvM" secondAttribute="bottom" id="9Qb-Cm-bmG"/>
                                             <constraint firstItem="dWk-bO-fXY" firstAttribute="centerY" secondItem="Tgx-TA-oUj" secondAttribute="centerY" id="Cxz-5X-Up0"/>
                                             <constraint firstItem="dWk-bO-fXY" firstAttribute="leading" secondItem="Tgx-TA-oUj" secondAttribute="leading" constant="20" id="OEG-Yk-3Ba"/>
                                             <constraint firstAttribute="trailing" secondItem="vdm-7S-pvM" secondAttribute="trailing" constant="20" id="g4T-8u-RKm"/>
+                                            <constraint firstItem="wh9-n5-Fee" firstAttribute="centerY" secondItem="Tgx-TA-oUj" secondAttribute="centerY" id="gK6-XQ-V5t"/>
                                             <constraint firstAttribute="trailing" secondItem="dWk-bO-fXY" secondAttribute="trailing" constant="20" id="p6u-cI-17c"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="OEG-Yk-3Ba"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <outlet property="celebrityNameLabel" destination="dWk-bO-fXY" id="fNJ-Zq-NG3"/>
+                                            <outlet property="celebrityPhoto" destination="wh9-n5-Fee" id="6BP-Dd-9pY"/>
                                             <segue destination="hcx-j6-pkq" kind="show" id="jZH-mO-IPt"/>
                                         </connections>
                                     </tableViewCell>
@@ -396,5 +420,6 @@
     </scenes>
     <resources>
         <image name="camera" width="250" height="250"/>
+        <image name="logo" width="88" height="88"/>
     </resources>
 </document>

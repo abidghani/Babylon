@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Haneke
 
 class DetailViewController: UIViewController {
 
@@ -34,7 +35,8 @@ class DetailViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         
-     self.photo.layer.cornerRadius = self.photo.frame.size.width/2
+        self.photo.layer.cornerRadius = self.photo.frame.size.width/2
+        self.photo?.layer.masksToBounds = true
      
         if let firstName = self.celebrity?.firstName {
             self.firstNameLabel.text = firstName
@@ -54,6 +56,14 @@ class DetailViewController: UIViewController {
         
         if let email = self.celebrity?.email {
             self.emailLabel.text = email
+            if email != "no email" {
+                let urlString = "http://api.adorable.io/avatars/200/" + email
+                let url = NSURL(string: urlString)
+                self.photo.hnk_setImageFromURL(url!)
+            } else {
+                let image : UIImage = UIImage(named:"camera")!
+                self.photo.image = image
+            }
         }
         
         if let createdAt = self.celebrity?.createdAt {
@@ -64,8 +74,6 @@ class DetailViewController: UIViewController {
             dateFormatter.dateFormat = "dd MMMM 'at' HH:mm a"
             self.createdDateLabel.text = dateFormatter.stringFromDate(createdDate!)
         }
-        
-        
         
     }
     

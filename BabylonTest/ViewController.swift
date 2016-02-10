@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Haneke
 
 class ViewController: UIViewController, DownloadMonitor,UITableViewDelegate, UITableViewDataSource  {
     
@@ -105,6 +106,22 @@ class ViewController: UIViewController, DownloadMonitor,UITableViewDelegate, UIT
         let celebrity2 = self.celebrities[indexPath.row] as! Celebrity
         let firstName = celebrity2.firstName
         let lastName = celebrity2.lastName
+        
+        // get photo
+        if let email = celebrity2.email as? String {
+            if email != "no email" {
+                let urlString = "http://api.adorable.io/avatars/200/" + email
+                let url = NSURL(string: urlString)
+                cell.celebrityPhoto.hnk_setImageFromURL(url!)
+            } else {
+                let image : UIImage = UIImage(named:"logo")!
+                cell.celebrityPhoto.image = image
+            }
+        } else {
+            let image : UIImage = UIImage(named:"logo")!
+            cell.celebrityPhoto.image = image
+        }
+        
         cell.celebrityNameLabel.text = firstName + " " + lastName
         return cell
     }
