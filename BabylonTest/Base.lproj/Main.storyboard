@@ -30,7 +30,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWk-bO-fXY">
-                                                    <rect key="frame" x="76" y="18" width="279" height="24"/>
+                                                    <rect key="frame" x="88" y="18" width="267" height="24"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                                     <color key="textColor" white="0.74832214765100669" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -53,7 +53,7 @@
                                             <constraints>
                                                 <constraint firstItem="wh9-n5-Fee" firstAttribute="centerY" secondItem="6bE-KG-ugt" secondAttribute="centerY" id="3DE-tC-2cN"/>
                                                 <constraint firstItem="wh9-n5-Fee" firstAttribute="leading" secondItem="6bE-KG-ugt" secondAttribute="leadingMargin" constant="20" id="94M-lT-qj0"/>
-                                                <constraint firstItem="dWk-bO-fXY" firstAttribute="leading" secondItem="wh9-n5-Fee" secondAttribute="trailing" constant="8" id="ldI-7h-CWd"/>
+                                                <constraint firstItem="dWk-bO-fXY" firstAttribute="leading" secondItem="wh9-n5-Fee" secondAttribute="trailing" constant="20" id="ldI-7h-CWd"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
